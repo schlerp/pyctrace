@@ -45,9 +45,9 @@ A household relationship is a Person to Person relationship. This represents the
 - Start time
 - End time
 
-### Infection Vector (EDGE/Relationship)
+### Transmission (EDGE/Relationship)
 
-An Infection Vector relationship is a person to person relationship. This represents a confirmed infection vector from one person to another. These are identified when a given person was infected, and have passed their infection onto another person. These are identified from other types of relationship and are generally not required in actual contect tracing but serve as a very useful relationship when reporting on vectors of infection through the community.
+An Transmission relationship is a person to person relationship. This represents a confirmed Transmission from one person to another. These are identified when a given person was infected, and have passed their infection onto another person. These are identified from other types of relationship and are generally not required in actual contact tracing but serve as a very useful relationship when reporting on vectors of infection through the community.
 
 ### Attributes
 
