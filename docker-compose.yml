@@ -1,0 +1,26 @@
+version: "3.3"
+services:
+  pyctrace-api:
+    build: pyctrace-api/.
+    container_name: pyctrace-api
+    ports:
+      - 8321:8321
+
+  pyctrace-ui:
+    build: pyctrace-ui/.
+    container_name: pyctrace-ui
+    ports:
+      - 8080:80
+
+  pyctrace-db:
+    image: neo4j:latest
+    container_name: pyctrace-db
+    volumes:
+      - pyctracedb:/data
+    ports:
+      - 7474:7474
+      - 7687:7687
+
+volumes:
+  pyctracedb:
+    driver: local
